@@ -1,0 +1,89 @@
+
+
+/* nav section  */
+
+.custom-btn{
+    display: flex;
+    gap: 10px;
+}
+
+.custom-btn .reg{
+    background-color: #1072BD;
+    color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.7s ease;
+}
+
+.custom-btn .reg:hover{
+    background-color: #ffffff;
+    color: #1072BD;
+    border: 1px solid #1072BD;
+}
+
+.custom-btn .login{
+    background-color: #ffffff;
+    color: #1072BD;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 1px solid #1072BD;
+    transition: all 0.7s ease;
+}
+
+.custom-btn .login:hover{
+    background-color: #1072BD;
+    color: #ffffff;
+    border: none;
+}
+
+.hero-bg{
+    background: url('../img/showcase-2.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.get-started-btn{
+    background-color: #ffffff;
+    color: #1072BD;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid #1072BD;
+    transition: all 0.7s ease;
+}
+
+.get-started-btn:hover{
+    background-color: #1072BD;
+    color: #ffffff;
+    border: none;
+}
+
+.contact-btn{
+    background-color: #1072BD;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.7s ease;
+}
+
+.contact-btn:hover{
+     background-color: #ffffff;
+    color: #1072BD;
+    border: 1px solid #1072BD;
+}
+
+.features-bg
+{
+    background: url('../img/main-2.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-color: rgba(247, 247, 247, 0.8);
+}
+

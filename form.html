@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #0000ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            max-width: 500px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #444;
+        }
+
+        input, select, textarea, button {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        input:password, input:text, textarea {
+            outline: none;
+            border-color: #4a90e2;
+        
+        }
+
+        .gender-row {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-top: 5px;
+        }
+
+        .gender-row label {
+            font-weight: normal;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        button {
+            background: #2422be;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 15px;
+            padding: 12px 14px;
+        }
+
+        button:hover {
+            background: #3a7bc8;
+        }
+        h4{
+            background-color: #1619bb;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 25px;
+            color:white;
+            border-radius: 10px;
+        }
+    
+    </style>
+</head>
+<body>
+    <section>
+<form action="">
+    <h4>Registration Form</h4>
+    <input type="text" name="firstname" value="" placeholder="First Name"><br>
+    <input type="text" name="lastname" value="" placeholder="Last Name"><br>
+    <input type="text" name="username" value="" placeholder="Username"><br>
+    <input type="email" name="email" value="" placeholder="Email"><br>
+     <input type="password" name="password" value="" placeholder="Password"><br>
+     <input type="password" name="confirmpassword" value="" placeholder="Confirm Password"><br>
+     
+    <div class="gender-row">
+        <label>
+            <input type="radio" name="gender" value="male"> Male
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female"> Female
+        </label>
+    </div>
+   
+    <button type="submit">Register</button>
+</form>
+
+    </section>
+        
+</body>
+</html>

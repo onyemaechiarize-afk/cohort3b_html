@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <p id="ptag">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, dolorum!
+    </p>
+
+    <a href="" id="anchorTag">Visit our website here</a>
+
+    <ul>
+      <li><a href="">List one</a></li>
+      <li><a href="">List two</a></li>
+    </ul>
+
+    <ul>
+      <li>This is my list 1</li>
+      <li>This is my list 2</li>
+      <li>This is my list 3</li>
+    </ul>
+
+    <!-- finding parent  -->
+    <div class="myFirstdiv">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <a href="aboutus.html">About us</a>
+    </div>
+
+    <p>
+      <a href="" id="reg">Click me</a>
+    </p>
+
+    <section>
+      <div id="secParent">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, et?
+        </p>
+      </div>
+    </section>
+
+    <!-- finding children  -->
+    <ul id="getChild">
+      <li><a href="">List 1</a></li>
+      <li><a href="">List 2</a></li>
+      <li><a href="">List 3</a></li>
+      <li><a href="">List 4</a></li>
+      <li><a href="">List 5</a></li>
+      <li><a href="">List 6</a></li>
+    </ul>
+
+    <!-- Getting an Attribute -->
+    <img id="imgattri" src="img/house.jpg" alt="This is a house" width="20%" />
+
+    <!-- setting attribute -->
+    <img alt="" id="setImg" />
+
+    <!-- Changing Styles -->
+    <p id="styleTag">This is a paragraph with changed styles.</p>
+
+    <!-- replacing an element  -->
+
+    <p id="replaceElement">This is a paragraph that will be replaced.</p>
+    <p id="replaceText">This is a the text that will be replaced.</p>
+
+    <!-- JS EVENTS LISTENER -->
+
+    <button id="clickBtn">Click Me</button>
+
+    <div id="clickeffect">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, tenetur.
+      </p>
+    </div>
+
+    <!-- // dblclick Event -->
+
+    <button id="dblclickBtn">Double Click Me</button>
+
+    <!-- mouseenter event  -->
+
+    <div id="mouseEnter">
+      <p>
+        This is the div we are going to use for mouseenter event. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+      </p>
+    </div>
+
+    <!-- <button onmouseenter="mouseEnterEvent()">Delete Here</button> -->
+
+    <!-- mouse leave event  -->
+
+    <button id="mouseLeaveBtn">Mouse Leave</button> <br />
+    <br />
+
+    <!-- keydown event -->
+
+    <input type="text" id="keyDownInput" placeholder="Type something..." />
+
+    <br />
+    <br />
+
+    <!-- keyup event -->
+
+    <input type="text" id="keyUpInput" placeholder="Type something..." />
+
+    <!-- How to remove event listener 10/8/2026  -->
+
+    <div id="divfunction">
+      <p>
+        This is the div that we will remove the event listener from. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+      </p>
+    </div>
+
+    <!-- ading class list -->
+    <div id="classListAdd">
+      <p>
+        This is where the js style will apply. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Consectetur delectus repudiandae tenetur
+        recusandae pariatur temporibus incidunt perferendis iste repellendus
+        magnam?
+      </p>
+    </div>
+
+    <!-- toggle class -->
+
+    <button id="togglebtn">Toggle me</button>
+
+    <style>
+      .myNewClass {
+        background-color: red;
+        padding: 2px;
+        border-radius: 10px;
+        color: white;
+      }
+      .secondnewclass {
+        line-height: 10px;
+        margin: 20px;
+      }
+
+      .toggleClass {
+        color: white;
+        padding: 5px 20px;
+        background-color: green;
+        border-radius: 10px;
+        border: none;
+      }
+    </style>
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/dom.js"></script>
+  </body>
+</html>
