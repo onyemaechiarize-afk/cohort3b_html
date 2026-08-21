@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Savoria | Gourmet Restaurant</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CDN (Grid & Responsiveness Only) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap-grid.min.css" rel="stylesheet" />
+  
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/aiwebsite.css" />
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <div class="top-nav">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="top-info d-flex gap-4">
+        <span><i class="bi bi-geo-alt-fill text-primary-color"></i> 123 Gourmet Ave, Food City</span>
+        <span><i class="bi bi-telephone-fill text-primary-color"></i> +1 (555) 234-5678</span>
+        <span class="d-none d-md-inline"><i class="bi bi-clock-fill text-primary-color"></i> Mon - Sun: 10:00 AM - 11:00 PM</span>
+      </div>
+      <div class="top-social d-flex gap-3">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <header class="main-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="#" class="brand-logo">
+        Savor<span>ia.</span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="desktop-menu">
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li class="dropdown-item-wrapper">
+            <a href="#food">Food <i class="bi bi-chevron-down ms-1 fs-7"></i></a>
+            <ul class="custom-dropdown">
+              <li><a href="#burgers"><i class="bi bi-disc"></i> Juicy Burgers</a></li>
+              <li><a href="#pizza"><i class="bi bi-pie-chart"></i> Artisan Pizzas</a></li>
+              <li><a href="#pasta"><i class="bi bi-border-style"></i> Italian Pasta</a></li>
+              <li><a href="#desserts"><i class="bi bi-cup-straw"></i> Sweet Desserts</a></li>
+              <li><a href="#drinks"><i class="bi bi-cup-hot"></i> Refreshments</a></li>
+            </ul>
+          </li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#refund">Refund Policy</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger Menu Icon (Mobile) -->
+      <button class="hamburger-toggle" id="hamburger-btn" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li class="mobile-dropdown-wrapper">
+          <div class="d-flex justify-content-between align-items-center mobile-link" id="mobile-dropdown-btn">
+            <span>Food</span>
+            <i class="bi bi-chevron-down"></i>
+          </div>
+          <ul class="mobile-sub-menu" id="mobile-sub-menu">
+            <li><a href="#burgers" class="mobile-link">Juicy Burgers</a></li>
+            <li><a href="#pizza" class="mobile-link">Artisan Pizzas</a></li>
+            <li><a href="#pasta" class="mobile-link">Italian Pasta</a></li>
+            <li><a href="#desserts" class="mobile-link">Sweet Desserts</a></li>
+          </ul>
+        </li>
+        <li><a href="#about" class="mobile-link">About Us</a></li>
+        <li><a href="#faq" class="mobile-link">FAQ</a></li>
+        <li><a href="#contact" class="mobile-link">Contact Us</a></li>
+        <li><a href="#refund" class="mobile-link">Refund Policy</a></li>
+      </ul>
+    </div>
+  </header>
+
+ <!-- HERO SLIDER SECTION -->
+<section class="hero-slider-section">
+    <div class="slider-wrapper">
+        
+        <!-- Slide 1: Gourmet Burger -->
+        <div class="slide active">
+            <div class="container">
+                <div class="row align-items-center min-vh-hero">
+                    <div class="col-lg-6">
+                        <div class="hero-text-content">
+                            <span class="badge-tag"><i class="bi bi-fire"></i> Chef's Special Selection</span>
+                            <h1 class="hero-title">Experience Culinary Excellence</h1>
+                            <p class="hero-description">Indulge in our signature double-cheeseburger made with 100% prime beef, smoked bacon, and handcrafted brioche buns.</p>
+                            <div class="hero-btn-group">
+                                <a href="#menu" class="btn-custom btn-filled">Order Online <i class="bi bi-arrow-right"></i></a>
+                                <a href="#reservation" class="btn-custom btn-outline">Book A Table</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-image-wrapper">
+                            <div class="image-glow"></div>
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1000&auto=format&fit=crop" 
+                                 alt="Gourmet Burger" 
+                                 class="hero-food-img" 
+                                 referrerpolicy="no-referrer" 
+                                 loading="eager">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Wood-Fired Pizza -->
+        <div class="slide">
+            <div class="container">
+                <div class="row align-items-center min-vh-hero">
+                    <div class="col-lg-6">
+                        <div class="hero-text-content">
+                            <span class="badge-tag"><i class="bi bi-star-fill"></i> Fresh Italian Flavors</span>
+                            <h1 class="hero-title">Artisanal Wood-Fired Pizzas</h1>
+                            <p class="hero-description">Baked in traditional stone ovens using imported San Marzano tomatoes, fresh basil, and creamy mozzarella.</p>
+                            <div class="hero-btn-group">
+                                <a href="#menu" class="btn-custom btn-filled">Explore Pizzas <i class="bi bi-arrow-right"></i></a>
+                                <a href="#contact" class="btn-custom btn-outline">View Special Offers</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-image-wrapper">
+                            <div class="image-glow"></div>
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1000&auto=format&fit=crop" 
+                                 alt="Artisanal Pizza" 
+                                 class="hero-food-img" 
+                                 referrerpolicy="no-referrer" 
+                                 loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Slide 3: Healthy Bowl -->
+        <div class="slide">
+            <div class="container">
+                <div class="row align-items-center min-vh-hero">
+                    <div class="col-lg-6">
+                        <div class="hero-text-content">
+                            <span class="badge-tag"><i class="bi bi-heart-pulse-fill"></i> Fresh & Healthy</span>
+                            <h1 class="hero-title">Vibrant Harvest Salad Bowls</h1>
+                            <p class="hero-description">A balanced fusion of organic avocado, crisp roasted greens, quinoa, and house-made citrus dressing.</p>
+                            <div class="hero-btn-group">
+                                <a href="#menu" class="btn-custom btn-filled">Discover Menu <i class="bi bi-arrow-right"></i></a>
+                                <a href="#about" class="btn-custom btn-outline">Our Ingredients</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-image-wrapper">
+                            <div class="image-glow"></div>
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1000&auto=format&fit=crop" 
+                                 alt="Fresh Salad Bowl" 
+                                 class="hero-food-img" 
+                                 referrerpolicy="no-referrer" 
+                                 loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Slider Controls -->
+        <div class="slider-controls">
+            <button class="slider-arrow prev" id="prevSlide" aria-label="Previous Slide"><i class="bi bi-chevron-left"></i></button>
+            <div class="slider-dots" id="sliderDots"></div>
+            <button class="slider-arrow next" id="nextSlide" aria-label="Next Slide"><i class="bi bi-chevron-right"></i></button>
+        </div>
+
+    </div>
+</section>
+    </div>
+    <!-- FOOTER SECTION -->
+<footer class="main-footer">
+
+    <!-- 3-Column Gallery Section with Hover Overlay -->
+    <div class="footer-gallery">
+        <div class="container">
+            <div class="gallery-header text-center">
+                <span class="badge-tag"><i class="bi bi-instagram"></i> @SavoriaRestaurant</span>
+                <h2 class="section-title">Follow Our Culinary Journey</h2>
+            </div>
+            <div class="row g-4">
+                
+                <!-- Gallery Column 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800&auto=format&fit=crop" 
+                             alt="Restaurant Ambiance" 
+                             class="gallery-img" 
+                             referrerpolicy="no-referrer" 
+                             loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <i class="bi bi-instagram overlay-icon"></i>
+                                <p>Cozy Dining Atmosphere</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Column 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop" 
+                             alt="Gourmet Food Spread" 
+                             class="gallery-img" 
+                             referrerpolicy="no-referrer" 
+                             loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <i class="bi bi-instagram overlay-icon"></i>
+                                <p>Handcrafted Gourmet Dishes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Column 3 -->
+                <div class="col-md-4 col-sm-12">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" 
+                             alt="Chef's Special Grill" 
+                             class="gallery-img" 
+                             referrerpolicy="no-referrer" 
+                             loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <i class="bi bi-instagram overlay-icon"></i>
+                                <p>Chef's Special Grill & BBQ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Footer Content -->
+    <div class="footer-body">
+        <div class="container">
+            <div class="row gy-4">
+                
+                <!-- Brand Info -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" class="brand-logo footer-logo">
+                        <span>Savor</span>ia<span class="dot">.</span>
+                    </a>
+                    <p class="footer-desc">Crafting unforgettably rich culinary experiences with fresh organic ingredients, traditional techniques, and endless passion.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#food">Our Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#refund">Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Operating Hours -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading">Opening Hours</h4>
+                    <ul class="footer-hours">
+                        <li><span>Monday - Friday:</span> <strong>10:00 AM - 10:00 PM</strong></li>
+                        <li><span>Saturday:</span> <strong>11:00 AM - 11:00 PM</strong></li>
+                        <li><span>Sunday:</span> <strong>11:00 AM - 09:00 PM</strong></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Form -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p class="footer-desc">Subscribe to receive exclusive offers and menu updates directly in your inbox.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright Bar -->
+    <div class="footer-bottom">
+        <div class="container text-center">
+            <p>&copy; 2026 Savoria Restaurant. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+  <!-- Custom Script -->
+  <script src="js/aiwebsite.js"></script>
+</body>
+</html>
