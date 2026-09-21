@@ -264,3 +264,18 @@ footer {
     padding-right: 1rem;
   }
 }
+
+
+.cusbtbn{
+  background-color: #f78c00fd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cusbtbn:hover {
+  background-color: #e07b00;
+}

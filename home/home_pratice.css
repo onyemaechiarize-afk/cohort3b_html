@@ -884,4 +884,24 @@ a {
     padding: 1.5rem;
   }
 }
+.reg{
+  font-family: sans-serif;
+  background-color:#4b2d07;
+  color: white;
+  margin: 10%;;
+  padding:10%;
+  border-radius: 10px;
+  text-align:center;
+}
+
+.p{
+color: white;
+}
+input {
+  background-color:#f78c00fd;
+  margin-bottom:  30px; 
+  margin-left: 5px;
+  inline-size: 35%;
+  border-radius: 10%;
+}
 
